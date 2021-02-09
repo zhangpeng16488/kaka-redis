@@ -7,7 +7,7 @@ import redis.clients.jedis.Transaction;
 public class TestMulti {
     public static void main(String[] args) {
         //创建客户端连接服务端，redis服务端需要被开启 
-        Jedis jedis = new Jedis("127.0.0.1", 6379);
+        Jedis jedis = new Jedis("47.100.41.55", 6379);
         jedis.flushDB();
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("hello", "world");
