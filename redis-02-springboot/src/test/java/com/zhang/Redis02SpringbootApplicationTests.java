@@ -17,6 +17,9 @@ class Redis02SpringbootApplicationTests {
 //        System.out.println(redisTemplate);
         redisTemplate.opsForValue().set("kaka","孙悟空sun");
         System.out.println(redisTemplate.opsForValue().get("kaka"));
+
+        redisTemplate.opsForValue().set("what","fuck");
+        System.out.println(redisTemplate.opsForValue().get("what"));
     }
 
 }
