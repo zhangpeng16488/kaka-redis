@@ -27,20 +27,14 @@ class Redis02SpringbootApplicationTests {
     @Test
     public void testRedisUtil(){
         redisUtil.set("fuck","you");
-        System.out.println(redisUtil.get("fuck"));
+        redisUtil.set("fuck1","you");
     }
 
     @Test
     public void testDelKeys(){
         //删除两个key
-        redisUtil.del("user","fuck");
+        redisUtil.del("fuck","fuck1");
     }
-
-    @Test
-    public void testCollectionsArray2List(){
-        System.out.println((Collection<String>) CollectionUtils.arrayToList("user"));
-    }
-
 
     @Test
     void contextLoads() {
